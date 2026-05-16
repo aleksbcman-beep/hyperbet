@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HyperBet — Leaderboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-left">
+<a href="index.html" class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>HyperBet</a>
+<div class="nav-menu">
+<a href="index.html" class="nav-item">Trade</a>
+<a href="vault.html" class="nav-item">Vault</a>
+<a href="risk.html" class="nav-item">Risk</a>
+<a href="leaderboard.html" class="nav-item on">Leaderboard</a>
+<a href="docs.html" class="nav-item">Docs</a>
+</div>
+</div>
+<div class="nav-right">
+<div class="pill"><span class="dot"></span>HyperEVM</div>
+<button class="btn-g" id="walletBtn">Connect</button>
+</div>
+</nav>
+
+<div class="page-content">
+<h1 class="page-title">Leaderboard</h1>
+<p class="page-desc">Top performers by profit. Updated in real-time.</p>
+
+<div class="lb-filters">
+<button class="f-btn on">All Time</button>
+<button class="f-btn">30d</button>
+<button class="f-btn">7d</button>
+<button class="f-btn">24h</button>
+</div>
+
+<div class="lb-table">
+<div class="lb-row head">
+<span class="lb-rank">#</span>
+<span class="lb-addr">Address</span>
+<span class="lb-pnl">P&L</span>
+<span class="lb-vol">Volume</span>
+<span class="lb-bets">Bets</span>
+<span class="lb-wr">Win Rate</span>
+</div>
+<div class="lb-row gold">
+<span class="lb-rank">1</span>
+<span class="lb-addr">0x7a3f...c2d1</span>
+<span class="lb-pnl g">+$142,300</span>
+<span class="lb-vol">$892,400</span>
+<span class="lb-bets">347</span>
+<span class="lb-wr">62.8%</span>
+</div>
+<div class="lb-row silver">
+<span class="lb-rank">2</span>
+<span class="lb-addr">0x9b2e...a4f8</span>
+<span class="lb-pnl g">+$98,750</span>
+<span class="lb-vol">$654,200</span>
+<span class="lb-bets">218</span>
+<span class="lb-wr">58.3%</span>
+</div>
+<div class="lb-row bronze">
+<span class="lb-rank">3</span>
+<span class="lb-addr">0x4d1c...e7b3</span>
+<span class="lb-pnl g">+$76,420</span>
+<span class="lb-vol">$521,800</span>
+<span class="lb-bets">412</span>
+<span class="lb-wr">55.1%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">4</span>
+<span class="lb-addr">0x2f8a...d9c6</span>
+<span class="lb-pnl g">+$54,890</span>
+<span class="lb-vol">$398,100</span>
+<span class="lb-bets">156</span>
+<span class="lb-wr">61.5%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">5</span>
+<span class="lb-addr">0xe5c7...b1a2</span>
+<span class="lb-pnl g">+$43,210</span>
+<span class="lb-vol">$312,600</span>
+<span class="lb-bets">289</span>
+<span class="lb-wr">53.6%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">6</span>
+<span class="lb-addr">0x1a9d...f4e8</span>
+<span class="lb-pnl g">+$38,900</span>
+<span class="lb-vol">$287,400</span>
+<span class="lb-bets">198</span>
+<span class="lb-wr">56.1%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">7</span>
+<span class="lb-addr">0x8c4b...a2d7</span>
+<span class="lb-pnl g">+$31,450</span>
+<span class="lb-vol">$245,800</span>
+<span class="lb-bets">167</span>
+<span class="lb-wr">54.5%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">8</span>
+<span class="lb-addr">0x6f2e...c8b1</span>
+<span class="lb-pnl g">+$27,800</span>
+<span class="lb-vol">$198,300</span>
+<span class="lb-bets">234</span>
+<span class="lb-wr">52.1%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">9</span>
+<span class="lb-addr">0xd3a1...e5f9</span>
+<span class="lb-pnl r">-$12,400</span>
+<span class="lb-vol">$176,500</span>
+<span class="lb-bets">312</span>
+<span class="lb-wr">44.2%</span>
+</div>
+<div class="lb-row">
+<span class="lb-rank">10</span>
+<span class="lb-addr">0xb7c9...d4a3</span>
+<span class="lb-pnl r">-$18,900</span>
+<span class="lb-vol">$154,200</span>
+<span class="lb-bets">278</span>
+<span class="lb-wr">41.7%</span>
+</div>
+</div>
+</div>
+
+<div class="t-wrap" id="TW"></div>
+<script src="app.js"></script>
+</body>
+</html>
